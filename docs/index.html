@@ -77,28 +77,31 @@
   </section>
   <section>
     <h2>Pedido Especial 💌</h2>
-    <label>
-      <input type="checkbox" id="aceita" onchange="mostrarMensagem()" />
-      Você aceita namorar comigo?
+    <label style="font-size: 1.2rem;">
+    <input type="checkbox" id="aceita" onchange="mostrarMensagem()" />
+    Você aceita namorar comigo?
     </label>
-  <p id="resposta" style="margin-top: 1rem; font-weight: bold; color: #d6336c;"></p>
+    <p id="resposta" style="margin-top: 1rem; font-weight: bold; color: #d6336c;"></p>
+    <div id="gif-romantico" style="display: none; margin-top: 1rem; text-align: center;">
+      <img src="https://raw.githubusercontent.com/jhonathanturial/j-j.github.io/refs/heads/main/Video%203.gif" alt="Coração pulando" style="max-width: 300px; border-radius: 16px;" />
+    </div>
   </section>
-<script>
-  function mostrarMensagem() {
-    const checkbox = document.getElementById('aceita');
-    const resposta = document.getElementById('resposta');
-    if (checkbox.checked) {
-      resposta.textContent = 'SIM! 😍 Agora somos oficialmente um só 💖';
-    } else {
-      resposta.textContent = '';
+  <script>
+    function mostrarMensagem() {
+      const checkbox = document.getElementById('aceita');
+      const resposta = document.getElementById('resposta');
+      const gif = document.getElementById('gif-romantico');
+  
+      if (checkbox.checked) {
+        resposta.textContent = 'SIM! 😍 Agora somos oficialmente um só 💖';
+        gif.style.display = 'block';
+      } else {
+        resposta.textContent = '';
+        gif.style.display = 'none';
+      }
     }
-  }
-</script>
-  <section class="videos">
-    <h2>Galeria de Vídeos</h2>
-    <p>Adicione abaixo os vídeos que representam nosso amor 💕</p>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_EXEMPLO" frameborder="0" allowfullscreen></iframe>
-  </section>
+  </script>
+
 
   <footer>
     <p>Com amor, Jhonathan & Jessica • 2025</p>
