@@ -61,7 +61,7 @@
 
   <section>
     <h2>Nossa História</h2>
-    <p>Sua chegada não era prevista, mas chegou no momento certo. Desde então, começamos a construir algo especial — feito de carinho, parceria e muito amor.</p>
+    <p>Sua chegada não era prevista, mas chegou no momento certo. Desde então, começamos a construir algo especial, feito de carinho, parceria e muito amor.</p>
     <img src="https://raw.githubusercontent.com/jhonathanturial/j-j.github.io/refs/heads/main/Video%201.gif" alt="Amor" style="max-width: 200px; display: block; margin: 1rem auto;">
   </section>
 
@@ -69,12 +69,31 @@
   <section>
     <h2>Carta de Amor</h2>
     <p>Jessica,</p>
-    <p>Sua chegada não era prevista, mas chegou no momento certo — como um presente da vida. Desde então, tudo em mim mudou. Você trouxe calma, carinho e uma força que eu nem sabia que existia em mim.</p>
+    <p>Sua chegada não era prevista, mas chegou no momento certo como um presente da vida. Desde então, tudo em mim mudou. Você trouxe calma, carinho e uma força que eu nem sabia que existia em mim.</p>
     <p>Eu te admiro, te respeito e te amo com tudo o que sou. Mesmo quando o mundo tenta nos distrair, lembro da nossa promessa: <strong>nunca desistir</strong>.</p>
     <p>Obrigado por ser meu amor, minha parceira e meu motivo de sorrir todos os dias. Esse site é só uma pequena homenagem pra mostrar o quanto você é importante.</p>
     <p>Com todo o meu coração,<br><strong>Jhonathan</strong> 💖</p>
+    <img src="https://raw.githubusercontent.com/jhonathanturial/j-j.github.io/refs/heads/main/Video%202.gif" alt="Amor" style="max-width: 200px; display: block; margin: 1rem auto;">
   </section>
-
+  <section>
+    <h2>Pedido Especial 💌</h2>
+    <label>
+      <input type="checkbox" id="aceita" onchange="mostrarMensagem()" />
+      Você aceita namorar comigo?
+    </label>
+  <p id="resposta" style="margin-top: 1rem; font-weight: bold; color: #d6336c;"></p>
+  </section>
+<script>
+  function mostrarMensagem() {
+    const checkbox = document.getElementById('aceita');
+    const resposta = document.getElementById('resposta');
+    if (checkbox.checked) {
+      resposta.textContent = 'SIM! 😍 Agora somos oficialmente um só 💖';
+    } else {
+      resposta.textContent = '';
+    }
+  }
+</script>
   <section class="videos">
     <h2>Galeria de Vídeos</h2>
     <p>Adicione abaixo os vídeos que representam nosso amor 💕</p>
